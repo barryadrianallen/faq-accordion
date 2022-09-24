@@ -46,3 +46,34 @@ h1 {
     z-index: +1;
     margin: -15em auto 0 auto;
 }
+
+label:hover {
+    cursor: pointer;
+}
+
+input{
+    display: none;
+}
+
+.question-content {
+    display: none;
+}
+
+input:checked + label + .question-content{
+    display: block;
+}
+
+label{
+    display: block;
+    border-top: solid 1px lightgray;
+    margin: 0 0 1em 0;
+    padding-top: 1em;
+}
+
+span {
+    float:right;
+}
+
+#label1 {
+    border: none;
+}
