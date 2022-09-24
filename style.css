@@ -1,0 +1,48 @@
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'kumbh sans';
+    font-size: 12px;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    width: 2em;
+    margin:1em auto;
+}
+
+#main-content {
+    margin: 15em 2em 5em 2em;
+    background-color: white;
+    padding: 1.5em;
+}
+
+.rounded-corners {
+    border-radius: 15px;
+}
+
+#background-image-container {
+    background-image: url("/images/bg-pattern-mobile.svg");
+    background-size: 25em;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 11em;
+    width: 30em;
+    padding: 2em;
+    margin: -2em auto 1em auto;
+}
+
+#logo-pic {
+    position: relative;
+    z-index: +1;
+    margin: -15em auto 0 auto;
+}
