@@ -10,6 +10,7 @@ html {
 body {
     font-family: 'kumbh sans';
     font-size: 12px;
+    padding: 0 3em 0 3em;
     background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 }
 
@@ -20,6 +21,90 @@ h1 {
     margin:1em auto;
 }
 
+/*Desktop layout*/
+@media (min-width: 930px) {
+
+    #wrapper {
+        display: block;
+        width: 900px;
+        margin: auto;
+    }
+
+    #main-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 80em;
+        height: 32em;
+        overflow: hidden;
+    }
+
+    #background-image-container {
+        background-image: url(/images/bg-pattern-desktop.svg);
+        background-size: 43em;
+        background-position: 58px -100px;
+        background-repeat: no-repeat;
+        height: 370px;
+        width: auto;
+        margin-left: -20em;
+        overflow: hidden;
+    }
+
+    #logo-pic {
+        position: relative;
+        height: 400px;
+        background-image: url(images/illustration-woman-online-desktop.svg);
+        background-size: 35em;
+        background-position: 155px 1px;
+        background-repeat: no-repeat;
+    }
+
+    #logo-box {
+        position: absolute;
+        width: 118px;
+        z-index: +1;
+        height: 146px;
+        margin-left: -46px;
+        margin-top: 100px;
+        background-image: url(images/illustration-box-desktop.svg);
+        background-position: -27px 16px;
+        background-repeat: no-repeat;
+        background-size: 16em;
+    }
+
+    #question-accordion {
+        position: relative;
+        display: inline-block;
+        justify-content: right;
+        padding-bottom: 0em;
+    }
+
+}
+
+/*Mobile layout*/
+@media (max-width: 929px) {
+    #background-image-container {
+        background-image: url("/images/bg-pattern-mobile.svg");
+        background-size: 25em;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 11em;
+        width: 30em;
+        padding: 2em;
+        margin: -2em auto 1em auto;
+    }
+
+    #logo-pic {
+        width: 300px;
+        height: 300px;
+        background-image: url("images/illustration-woman-online-mobile.svg");
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: +1;
+        margin: -13em auto 0 auto;
+    }
+
+  }
+
 #main-content {
     margin: 15em 2em 5em 2em;
     background-color: white;
@@ -28,23 +113,6 @@ h1 {
 
 .rounded-corners {
     border-radius: 15px;
-}
-
-#background-image-container {
-    background-image: url("/images/bg-pattern-mobile.svg");
-    background-size: 25em;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 11em;
-    width: 30em;
-    padding: 2em;
-    margin: -2em auto 1em auto;
-}
-
-#logo-pic {
-    position: relative;
-    z-index: +1;
-    margin: -15em auto 0 auto;
 }
 
 label:hover {
