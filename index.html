@@ -28,7 +28,7 @@
           <h1>FAQ</h1>
 
           <input type="checkbox" id="question1" />
-          <label for="question1" id="label1">How many team members can I invite?<span><img src="/images/icon-arrow-down.svg"></span></label>
+          <label for="question1" id="label1" onclick="invertArrowImage(0)">How many team members can I invite?<span><img src="/images/icon-arrow-down.svg" id="arrow-image1"></span></label>
           <div class="question-content">
             <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
                 team members for the Premium plan.
@@ -36,14 +36,14 @@
           </div>
 
           <input type="checkbox" id="question2" />
-          <label for="question2">What is the maximum file upload size?<span><img src="/images/icon-arrow-down.svg"></span></label>
+          <label for="question2" onclick="invertArrowImage(1)">What is the maximum file upload size?<span><img src="/images/icon-arrow-down.svg" id="arrow-image2"></span></label>
           <div class="question-content">
             <p>No more than 2GB. All files in your account must fit your allotted storage space.
             </p>
           </div>
 
           <input type="checkbox" id="question3" />
-          <label for="question3">How do I reset my password?<span><img src="/images/icon-arrow-down.svg"></span></label>
+          <label for="question3" onclick="invertArrowImage(2)">How do I reset my password?<span><img src="/images/icon-arrow-down.svg" id="arrow-image3"></span></label>
           <div class="question-content">
             <p>Click “Forgot password” from the login page or “Change password” from your profile page.
               A reset link will be emailed to you.
@@ -51,14 +51,14 @@
           </div>
 
           <input type="checkbox" id="question4" />
-          <label for="question4"> Can I cancel my subscription?<span><img src="/images/icon-arrow-down.svg"></span></label>
+          <label for="question4" onclick="invertArrowImage(3)"> Can I cancel my subscription?<span><img src="/images/icon-arrow-down.svg" id="arrow-image4"></span></label>
           <div class="question-content">
             <p>Yes! Send us a message and we’ll process your request no questions asked.
             </p>
           </div>
 
           <input type="checkbox" id="question5" />
-          <label for="question5">Do you provide additional support?<span><img src="/images/icon-arrow-down.svg"></span></label>
+          <label for="question5" onclick="invertArrowImage(4)">Do you provide additional support?<span><img src="/images/icon-arrow-down.svg" id="arrow-image5"></span></label>
           <div class="question-content">
             <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.
             </p>
@@ -69,5 +69,8 @@
     </div>
 
   </div>
+
+  <script src="javascript.js"></script>
+
 </body>
 </html>
