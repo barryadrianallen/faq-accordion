@@ -25,6 +25,51 @@ h1 {
     transform: rotate(180deg);
   }
 
+.bold-text {
+    font-weight:bold;
+}
+
+#main-content {
+    margin: 15em 2em 5em 2em;
+    background-color: white;
+    padding: 1.5em;
+}
+
+.rounded-corners {
+    border-radius: 15px;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+input{
+    display: none;
+}
+
+.question-content {
+    display: none;
+}
+
+input:checked + label + .question-content{
+    display: block;
+}
+
+label{
+    display: block;
+    border-top: solid 1px lightgray;
+    margin: 0 0 1em 0;
+    padding-top: 1em;
+}
+
+span {
+    float:right;
+}
+
+#label1 {
+    border: none;
+}
+
 /*Desktop layout*/
 @media (min-width: 930px) {
 
@@ -38,7 +83,7 @@ h1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         max-width: 80em;
-        height: 32em;
+        height: auto;
         overflow: hidden;
     }
 
@@ -108,44 +153,3 @@ h1 {
     }
 
   }
-
-#main-content {
-    margin: 15em 2em 5em 2em;
-    background-color: white;
-    padding: 1.5em;
-}
-
-.rounded-corners {
-    border-radius: 15px;
-}
-
-label:hover {
-    cursor: pointer;
-}
-
-input{
-    display: none;
-}
-
-.question-content {
-    display: none;
-}
-
-input:checked + label + .question-content{
-    display: block;
-}
-
-label{
-    display: block;
-    border-top: solid 1px lightgray;
-    margin: 0 0 1em 0;
-    padding-top: 1em;
-}
-
-span {
-    float:right;
-}
-
-#label1 {
-    border: none;
-}
