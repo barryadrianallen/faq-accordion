@@ -10,7 +10,7 @@ html {
 body {
     font-family: 'kumbh sans';
     font-size: 12px;
-    padding: 0 3em 0 3em;
+    padding: 0 1em 0 1em;
     background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 }
 
@@ -30,7 +30,7 @@ h1 {
 }
 
 #main-content {
-    margin: 15em 2em 5em 2em;
+    margin: 15em 1em 5em 1em;
     background-color: white;
     padding: 1.5em;
 }
