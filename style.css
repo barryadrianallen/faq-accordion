@@ -33,7 +33,6 @@ h1 {
     margin: 15em 1em 5em 1em;
     background-color: white;
     padding: 1.5em;
-    max-width: 500px;
 }
 
 .rounded-corners {
@@ -144,13 +143,13 @@ span {
     }
 
     #logo-pic {
-        width: 300px;
+        max-width: 280px;
         height: 300px;
         background-image: url("images/illustration-woman-online-mobile.svg");
         background-repeat: no-repeat;
         position: relative;
         z-index: +1;
-        margin: -13em auto 0 auto;
+        margin: -12.2em auto 0 auto;
     }
 
   }
